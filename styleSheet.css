@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url(contact-form.png);
+    background-size: cover;
+}
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+.box h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+.box .input-box{
+    position: relative;
+}
+.box .input-box input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+}
+.box .input-box label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    transition: .5s;
+}
+.box .input-box input:focus ~ label,
+.box .input-box input:valid ~ label{
+    top: -18px;
+    left: 0;
+    color: #FFBB3B;
+    font-size: 12px;
+}
+.box input[type="submit"]{
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: bold;
+    background: #FFBB3B;
+    transform: translate(45%,50%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor:pointer;
+    font-size: 15px;
+}
+.box input[type="submit"]:hover{
+    background-color: #FFBB3B;
+}
+
+.box input[type="reset"]{
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: bold;
+    background: #FFBB3B;
+    transform: translate(65%,50%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor:pointer;
+    font-size: 15px;
+}
+.gender{
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    left: -10px;
+    position: relative;
+}
+.gender h3{
+    color: white;
+
+}
+
+.gender input[type='radio']:after {
+    list-style: none;
+    width: 13px;
+    height: 13px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: white;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+
+}
+
+.gender input[type='radio']:checked:after {
+    list-style: none;
+    width: 13px;
+    height: 13px;
+    border-radius: 15px;
+    position: relative;
+    background-color: #ffa500;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+.input-box .message{
+    font-size: 15px;
+    color: black;
+}
